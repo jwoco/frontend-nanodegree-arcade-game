@@ -52,7 +52,7 @@ Enemy.prototype.Xoverlaps = function (x1,x2) {
         return true;
 }
 Enemy.prototype.Yoverlaps = function(y1,y2) {
-    if ((y2 > (y1 - 49)) && (y2 < (y1 + 49)))
+    if ((y2 > (y1 - 70)) && (y2 < (y1 + 70)))
         return true;
 }
 
@@ -117,9 +117,9 @@ resetGame = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
+// Instantiate enemies, assign properties to various enemies to vary speeds and start locations, so they appear random.
 var enemy1 = new Enemy;
 var enemy2 = new Enemy;
-// Vary enemy speeds and start locations to appear random.
 enemy2.speed = 1;
 enemy2.x = 160;
 var enemy3 = new Enemy;
