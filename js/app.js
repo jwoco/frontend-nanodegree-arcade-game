@@ -46,13 +46,14 @@ Enemy.prototype.collisionCheck = function() {
     if (this.Yoverlaps(player.y, this.y) && this.Xoverlaps(player.x, this.x))
         return true;
 }
-// Compare current right-most x value of enemy and see if it is within the x value range of current player location.
+// Compare current x values of enemy and player see if they overlap (using approximate bounding box).
 Enemy.prototype.Xoverlaps = function (x1,x2) {
     if ((x2 > (x1 - 49)) && (x2 < (x1 + 49)))
         return true;
 }
+// Compare current y values for enemy and player and see if they overlap (using approximate bounding box).
 Enemy.prototype.Yoverlaps = function(y1,y2) {
-    if ((y2 > (y1 - 70)) && (y2 < (y1 + 70)))
+    if ((y2 > (y1 - 60)) && (y2 < (y1 + 60)))
         return true;
 }
 
@@ -80,7 +81,7 @@ Player.prototype.update = function() {
         console.log("Success");
         this.score = this.score + 1;
         console.log(this.score);
-        alert("Success!" + "" + "Score:" + "" + this.score);
+        alert("Success!" + "  " + "Score:" + "" + this.score);
         // Reset player to start position and log score.
         resetGame();
      }
