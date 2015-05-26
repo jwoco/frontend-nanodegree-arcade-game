@@ -4,9 +4,7 @@ frontend-nanodegree-arcade-game
 Welcome to the Frogger game.
 
 
-To play the game, visit my GitHub page (https://github.com/jwoco/jwoco.github.io/frogger-page).
-
-To start the game, click index.html, then see the instructions below.
+To play the game, visit my GitHub page (http://jwoco.github.io/frontend-nanodegree-arcade-game/), then see the instructions below.
 
 
 Instructions on playing the game
