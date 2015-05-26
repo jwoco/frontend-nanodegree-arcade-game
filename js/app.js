@@ -42,7 +42,7 @@ Enemy.prototype.render = function() {
 // Check to see if an enemy has collided with the player (their bounding boxes overlap)
 Enemy.prototype.collisionCheck = function() {
     // Compare current x, y values of the enemy and player boxes
-    //if this.y === player.y
+    //if this.y === player.y. Note: Ideas for this function come from the related forum discussions for FE Feb15.
     if (this.Yoverlaps(player.y, this.y) && this.Xoverlaps(player.x, this.x))
         return true;
 }
